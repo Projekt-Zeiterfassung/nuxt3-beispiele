@@ -1,4 +1,4 @@
-import { IconDefinition } from '@fortawesome/pro-duotone-svg-icons';
+import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 // UI --------------------------------------------------------------
 
