@@ -25,23 +25,6 @@ export default defineNuxtConfig({
     runtimeConfig: {
         STABLE: false,
     },
-    routeRules: {
-        '/': { redirect: '/info' },
-        // Main web page
-        '/info/**': { static: true },
-        // About
-        '/about/**': { static: true },
-        // Docs
-        '/docs/**': { static: true },
-        // User authentication
-        '/user/**': { ssr: false },
-        // Admin dashboard
-        '/admin/**': { ssr: false },
-        // App
-        '/app/**': { ssr: false },
-        // Backend
-        '/api/**': {},
-    },
     css: [
         '@fortawesome/fontawesome-svg-core/styles.css',
         'github-markdown-css/github-markdown-light.css',
