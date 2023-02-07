@@ -26,98 +26,11 @@ const {
     rose,
 } = colors;
 
-const mediaModifiers = [
-    /* 'sm',
-    'md',
-    'lg',
-    'xl',
-    '2xl',
-    'dark',
-    'portait',
-    'landscape',
-    'motion-safe',
-    'motion-reduce',
-    'contrast-more',
-    'contrast-less',
-    'print',
-    'rtl',
-    'ltr', */
-];
-
-const modifiers = [
-    'hover',
-    'focus',
-    'focus-within',
-    'focus-visible',
-    'active',
-    // 'visited',
-    // 'target',
-    // 'first',
-    // 'last',
-    // 'only',
-    // 'add',
-    // 'even',
-    // 'first-of-type',
-    // 'last-of-type',
-    // 'only-of-type',
-    // 'empty',
-    // 'disabled',
-    // 'enabled',
-    // 'checked',
-    // 'indeterminate',
-    // 'default',
-    // 'requiered',
-    // 'valid',
-    // 'invalid',
-    // 'in-range',
-    // 'out-of-range',
-    // 'placehoder-shown',
-    // 'autofill',
-    // 'read-only',
-    // 'open',
-    // 'before',
-    // 'after',
-    // 'first-letter',
-    // 'fist-line',
-    // 'marker',
-    // 'selection',
-    // 'file',
-    // 'backdrop',
-    // 'placeholder',
-];
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     darkMode: 'class',
-    safelist: [
-        {
-            pattern: /(border|ring)-primary/,
-            variants: ['hover', 'focus', 'focus-within', 'group-focus-within'],
-        },
-        {
-            pattern: /(border|ring)-red-600/,
-            variants: ['hover', 'focus', 'focus-within', 'group-focus-within'],
-        },
-        {
-            pattern: /(bg|text)-primary/,
-        },
-        {
-            pattern: /(bg|text)-red-600/,
-        },
-        {
-            pattern: /(bg|text)-accent-(robot|school-notes)/,
-        },
-    ],
     theme: {
-        extend: {
-            borderRadius: {
-                sm: '4px',
-            },
-            boxShadow: {
-                sm: '0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24)',
-            },
-        },
         fontFamily: {
             display: ['Montserrat'],
             header: ['Neucha'],
@@ -128,8 +41,6 @@ module.exports = {
             transparent: 'transparent',
             primary: 'hsl(210, 73%, 46%)',
             'primary-light': 'hsl(210, 79%, 76%)',
-            'vue-green': 'hsl(154, 48%, 49%)',
-            'vue-gray': 'hsl(211, 28%, 29%)',
             white,
             black,
             slate,
@@ -153,11 +64,7 @@ module.exports = {
             fuchsia,
             pink,
             rose,
-            // accents
-            'accent-robot': 'hsl(263, 69%, 42%)',
-            'accent-school-notes': 'hsl(160, 84%, 39%)',
-            'accent-school-messages': 'hsl(21, 90%, 48%)',
         },
     },
-    // plugins: [require('@tailwindcss/line-clamp')],
+    plugins: [require('@tailwindcss/line-clamp')],
 };
