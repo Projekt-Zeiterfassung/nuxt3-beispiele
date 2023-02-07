@@ -1,42 +1,15 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Template
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+```sh
+npm install # Installation
 
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
+npm run dev # Dev server starten
 ```
 
-## Development Server
+## Links Vue
 
-Start the development server on http://localhost:3000
+[Vue Mastery](https://www.youtube.com/@VueMastery)
+[Learn Vue](https://www.youtube.com/@LearnVue)
 
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
