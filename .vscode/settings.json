@@ -1,0 +1,11 @@
+{
+    "tailwindCSS.experimental.configFile": "./tailwind.config.cjs",
+    "tailwindCSS.classAttributes": ["class", "className", "ngClass", "root-class"],
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "cSpell.words": [
+        "fortawesome",
+        "Xmark"
+    ]
+}

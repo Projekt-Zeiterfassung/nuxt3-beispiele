@@ -1,0 +1,53 @@
+{
+    "name": "virtual-school",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "supabase:generate": "docker exec supabase-meta node /usr/src/app/bin/src/server/app.js gen types typescript --include-schemas public,auth,realtime,storage > supabase/types.ts"
+    },
+    "devDependencies": {
+        "@nuxt/content": "^2.3.0",
+        "@nuxtjs/tailwindcss": "^6.2.0",
+        "@types/uuid": "^9.0.0",
+        "@vueuse/components": "^9.11.0",
+        "@vueuse/core": "^9.10.0",
+        "@vueuse/nuxt": "^9.11.0",
+        "autoprefixer": "^10.4.13",
+        "nuxt": "3.0.0",
+        "postcss": "^8.4.21",
+        "sass": "^1.57.1",
+        "tailwindcss": "^3.2.4",
+        "vite-plugin-vue-type-imports": "^0.2.4"
+    },
+    "dependencies": {
+        "@fortawesome/free-brands-svg-icons": "^6.2.1",
+        "@fortawesome/free-regular-svg-icons": "^6.2.1",
+        "@fortawesome/free-solid-svg-icons": "^6.2.1",
+        "@fortawesome/vue-fontawesome": "^3.0.2",
+        "@pinia/nuxt": "^0.4.6",
+        "@tailwindcss/line-clamp": "^0.4.2",
+        "@tiptap/extension-code-block": "^2.0.0-beta.209",
+        "@tiptap/extension-image": "^2.0.0-beta.209",
+        "@tiptap/extension-link": "^2.0.0-beta.209",
+        "@tiptap/extension-task-item": "^2.0.0-beta.209",
+        "@tiptap/extension-task-list": "^2.0.0-beta.209",
+        "@tiptap/extension-underline": "^2.0.0-beta.209",
+        "@tiptap/starter-kit": "^2.0.0-beta.209",
+        "@tiptap/vue-3": "^2.0.0-beta.209",
+        "@types/showdown": "^2.0.0",
+        "github-markdown-css": "^5.1.0",
+        "highlight.js": "^11.7.0",
+        "pinia": "^2.0.28",
+        "showdown": "^2.1.0",
+        "tiptap-markdown": "^0.6.0",
+        "uuid": "^9.0.0"
+    },
+    "overrides": {
+        "vue": "3.2.45"
+    }
+}

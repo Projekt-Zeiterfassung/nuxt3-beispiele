@@ -1,0 +1,40 @@
+.overlay
+    position: absolute
+    overflow: hidden
+    width: 100%
+    height: 100%
+    top: 0px
+    left: 0px
+    
+.d-button
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    @apply border-none uppercase tracking-wide font-semibold focus:outline-none select-none whitespace-nowrap h-fit
+
+.d-button
+    .overlay
+        &::before
+            position: absolute
+            content: ''
+            top: 0
+            left: 0
+            min-width: 100%
+            min-height: 100%
+
+.d-button:hover
+    .overlay
+        &::before
+            @apply bg-gray-500 bg-opacity-[0.15]
+
+.d-button[solid='false']:hover
+    .overlay
+        &::before
+            background: currentColor
+            opacity: 0.15
+
+.d-button[dark='true']:hover
+    .overlay
+        &::before
+            @apply bg-white bg-opacity-[0.15]

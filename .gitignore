@@ -1,0 +1,14 @@
+node_modules
+.npmrc
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+
+# supabase data
+
+supabase/db/data
+supabase/storage
